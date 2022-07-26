@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" >
+<link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<script src="https://use.fontawesome.com/4844c1da5f.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+    <section class="header">
+        <!--Navigation bar-->
+        <nav>
+            <a class="logo" href="index.html"><span>START BOOTSTRAP</span></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#portfolio">PORTOFOLIO</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="image">
+            <img src="image\avataaars.svg";>
+        </div>
+        <h1>Start Bootstrap</h1>
+    </section>
+
+    <!--PORTFOLIO-->
+    <section class="portfolio-items">
+        <h1 id="portfolio">PORTFOLIO</h1>
+        <div class="row">
+            <div class="column">
+              <img src="image/cabin.png" alt="cabin" width="400px">
+              <img src="image/cake.png" alt="cake" width="400px">
+              <img src="image/circus.png" alt="circus" width="400px">
+            </div>
+            <div class="column">
+                <img src="image/game.png" alt="game" width="400px">
+                <img src="image/safe.png" alt="safe" width="400px">
+                <img src="image/submarine.png" alt="submarine" width="400px">
+              </div>
+          </div>
+    </section>
+
+    <!--ABOUT-->
+
+    <section id="about" class="about">
+        <h1>ABOUT</h1>
+        <div class="rows">
+            <div class="col">
+               <p>Freelancer is a free bootstrap theme created by Start Bootstrap.
+                 The download includes the complete source files including HTML, CSS, and JavaScript
+                 as well as optional SASS stylesheets for easy customization.
+                </p>
+          </div>
+          <div class="col">
+            <p>You can create your 
+                own custom avatar for the masthead, change the icon in the dividers, and add your
+                 email address to the contact form to make it fully functional!
+             </p>
+            </div>
+       </div>
+       <a href="" class="hero-btn">Free Download</a>
+
+    </section>
+
+    <!--CONTACT-->
+    <section >
+        <h1 id="contact" class="contact">CONTACT ME</h1>
+        <div class="registration">
+        
+                <label><input type="text" name="full-name" placeholder=" Full Name" required /></label>
+                <label><input type="email" name="email" placeholder="Email address" required /></label>
+                <label><input type="number" name="number" placeholder="Phone Number" required /></label>
+                <label><input type="text" name="message" placeholder="Message" required /></label>
+        
+         <input class="btn" type="submit" value="Submit" />
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <section id="footer" class="footer">
+        <h4>LOCATION</h4>
+		<p>2215 John Daniel Drive Clark, MO 65243 </p><br>
+        <h4>AROUND THE WEB</h4>
+        <div class="icons">
+             <i class="fa fa-facebook"></i>
+             <i class="fa fa-twitter"></i>
+             <i class="fa fa-instagram"></i>
+        </div>
+       <br>
+        <h4>ABOUT FREELANCER</h4>
+        <p>Freelancer is a free to use, MIT licensed Bootstrap theme created by <a href="">Start Bootstrap.</a></p>
+
+    </section>
+
+    <!--Javascript-->
+    <script>
+         var navLinks = document.getElementById("navLinks");
+
+         function showMenu(){
+            navLinks.style.right = "0";
+         }
+         function hideMenu(){
+            navLinks.style.right = "-210px";
+         }
+
+         var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 100,
+	speedAsDuration: true
+});
+
+
+    </script>
+
+</body>
+</html>
